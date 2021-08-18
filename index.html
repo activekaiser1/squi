@@ -3,6 +3,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 <input type="number" id="num" value="120" min="1" max="200">
+
+<center> 
 <button>𝅝</button>
 <button>𝅗𝅥</button>
 <button>𝅘𝅥</button>
@@ -11,9 +13,10 @@
 <button>𝅘𝅥𝅰</button>
 <button>𝅘𝅥𝅱</button>
 <button>𝅘𝅥𝅲</button>
+</center>
   
 <canvas id="myCanvas" style="background:lightblue"></canvas>
-<input type="file" id="myfile" name="myfile"><input type="file" id="myfile" name="myfile"><input type="file" id="myfile" name="myfile"><input type="file" id="myfile" name="myfile">
+<input type="file" id="myfile" name="myfile"><input type="file" id="myfile" name="myfile"><input type="file" id="myfile" name="myfile"><input type="file" id="myfilez" name="myfile">
 <style>
 
   
@@ -26,6 +29,11 @@
 }
   
 #num  {
+     margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -100%);    
     text-align: center;
     width: 33px;
   }
@@ -34,6 +42,12 @@ input[type=file] {
     position:relative;
     top: 444px;
     width: 81px; 
+  }
+  
+#myfilez { 
+    position:relative;
+    top: 444px;
+    width: 82px; 
   }
 
 button {
