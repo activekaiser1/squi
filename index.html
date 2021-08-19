@@ -2,7 +2,7 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-<input type="number" id="num" value="120" min="1" max="200">
+<center> <input type="number" id="num" value="120" min="1" max="200"> </center>
 
 
 <center> 
@@ -21,7 +21,7 @@
    
 #myCanvas{
    margin: 0;
-   position: absolute;
+   position: relative;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);          
@@ -30,6 +30,8 @@
 #num  {
     touch-action: manipulation;
   font-size:10px;
+   text-align: center;
+    width: 33px
   }
 
 button {
@@ -42,7 +44,7 @@ button {
 }
    
 input[type=file] { 
-    position:fixed;
+    position:relative;
     width: 82px; 
     margin-left: -1px;
   }
