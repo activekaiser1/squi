@@ -66,7 +66,8 @@ input[type=file] {
 </style>
 
 <script>
-
+var counter = 0;
+ var feel = ["red","red","red","red","red","red","red","red","red","red","red"];
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
 c.width = window.innerWidth;
@@ -74,6 +75,57 @@ c.height = window.innerWidth;
 c.style.position = "absolute";
 c.style.top = window.innerHeight/2 - window.innerWidth/2 + "px";
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  setInterval(function(){ 
+                                                               
+counter++; 
+                                       
+                                                               
+ctx.clearRect(0,0,window.innerWidth,window.innerWidth);
+
+ctx.beginPath();
+ctx.rect(1-counter/2, 1-counter/2, (window.innerWidth)-1+counter, (window.innerWidth)-1+counter);
+ctx.fillStyle = feel[0];
+ctx.fill();
+ctx.stroke();
+                                                               
+
+ctx.beginPath();
+ctx.rect(1+window.innerWidth/6-counter/2,1+window.innerWidth/6-counter/2,window.innerWidth-window.innerWidth/3+counter,window.innerWidth-window.innerWidth/3+counter);
+ctx.fillStyle = feel[1];
+ctx.fill();
+ctx.stroke();
+
+                                                                
+ctx.beginPath();                                                                
+ctx.rect(1+window.innerWidth/3-counter/2,1+window.innerWidth/3-counter/2,window.innerWidth-window.innerWidth/1.5+counter,window.innerWidth-window.innerWidth/1.5+counter);
+ctx.fillStyle = feel[2];
+ctx.fill();
+ctx.stroke();
+
+
+ctx.beginPath();
+ctx.rect(window.innerWidth/2-counter/2, window.innerWidth/2-counter/2, counter, counter);
+ctx.fillStyle = feel[3];
+ctx.fill();
+ctx.stroke();
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 </script>
 </body>
 </html>
